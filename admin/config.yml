@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: kokerserra/msm-events-website
+  branch: main
+
+media_folder: "assets/gallery"
+public_folder: "/assets/gallery"
+
+collections:
+  - name: "gallery"
+    label: "Çalışmalarımız Fotoğrafları"
+    folder: "gallery"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Fotoğraf", name: "image", widget: "image" }
